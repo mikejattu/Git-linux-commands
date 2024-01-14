@@ -1,0 +1,22 @@
+git clone <ssh link from the github repo> # to clone the repo
+
+#creating a new branch and doing the changes
+git branch <branch name> # to create a new branch
+git branch -a # to see all the branches
+git checkout <branch name> # to switch to the branch
+git branch -d <branch name> # to delete the branch if it is merged
+git branch -D <branch name> # to delete the branch even if it is not merged
+git checkout -b <branch name> # to create a new branch and switch to it
+git status # to see the status of the repo
+
+# to add, commit and push the changes to the branch
+git add <file name> # to add the file to the staging area
+git add . # to add all the files to the staging area
+git commit -m "commit message" # to commit the changes
+git push origin <branch name> # to push the changes to the branch
+git merge <branch name> # to merge the branch to the master
+git pull origin <branch name> # to pull the changes from the branch
+
+
+git log # to see the commit history
+git log --oneline # to see the commit history in one line
