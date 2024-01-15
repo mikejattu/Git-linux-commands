@@ -4,6 +4,8 @@ git clone <ssh link from the github repo> # to clone the repo
 git branch <branch name> # to create a new branch
 git branch -a # to see all the branches
 git checkout <branch name> # to switch to the branch
+git checkout -b <branch name> # to create a new branch and switch to it
+git status # to see the status of the repo
 
 # deleting the repo from the local system
 step 1:
@@ -15,12 +17,7 @@ step 2:
 git push origin --delete <branch-name>  
 
 Alternatively:
-
-# this is used to delete a remote branch on the GitHub repository
-git push origin :<branch-name>
-
-git checkout -b <branch name> # to create a new branch and switch to it
-git status # to see the status of the repo
+git push origin :<branch-name> # this is used to delete a remote branch on the GitHub repository
 
 # to add, commit and push the changes to the branch
 git add <file name> # to add the file to the staging area
