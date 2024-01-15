@@ -19,6 +19,9 @@ git push origin --delete <branch-name>
 Alternatively:
 git push origin :<branch-name> # this is used to delete the branch on the GitHub repository and this change is not done in the remote system
 
+# to push the creation of the branch
+git push origin <branch-name>
+
 # to add, commit and push the changes to the branch
 git add <file name> # to add the file to the staging area
 git add . # to add all the files to the staging area
