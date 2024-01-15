@@ -24,10 +24,19 @@ git add <file name> # to add the file to the staging area
 git add . # to add all the files to the staging area
 git commit -m "commit message" # to commit the changes
 git push origin <branch name> # to push the changes to the branch
-git merge <branch name> # to merge the branch to the master
 git pull origin <branch name> # to pull the changes from the branch
 
 git log # to see the commit history
 git log --oneline # to see the commit history in one line
 
-
+# merging the changes to the main repo
+git checkout main # move to the main repo
+git pull origin main  # Ensure your local main branch is up-to-date with the remote main branch.
+git merge <branch name> # to merge the branch to the master
+# Resolve Conflicts (if any)
+git add <conflicted-file>
+# After resolving conflicts in all files, continue the merge:
+git merge --continue
+# Commit the Merge
+git commit -m "Merge feature-branch into main"
+git push origin main
